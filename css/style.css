@@ -1,0 +1,149 @@
+@font-face { font-family: Tabitha; src: url("../fonts/Tabitha.ttf"); } 
+
+* {
+    box-sizing: border-box;
+    }
+
+
+
+body {
+font-family: Tabitha;
+}
+
+.header {
+    display: flex;
+    background-color: lightgrey;
+    position: sticky; 
+}
+ 
+a {
+    color: black;
+    padding: 1em;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightskyblue;
+    transition: 0.3s;
+}
+
+
+
+header {
+    min-width: 480px;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    margin: auto;
+}
+
+.line {
+    height: 50px;
+    min-width: 480px;
+    background-color: lightskyblue;
+}
+
+.copyright {
+    height: 50px;
+    min-width: 480px;
+    background-color: lightgrey;
+    text-align: center;
+    margin: 1em 0 1em 0;
+    padding: 1em;
+    position: ;
+}
+
+
+/* mobile */
+@media screen and (max-width: 767px) {
+    .main_menu {
+        display: none;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 768px) {
+    .main_menu {
+        width: auto;
+        display: flex; 
+        list-style: none;
+        font-size: 1.8em;
+        padding: 0;
+        }
+    .logo {
+            margin: auto;
+    }
+
+  /* dropdown :start
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    color: lightskyblue;
+  }
+   
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 1.5em;
+    margin-left: 2.3em;
+    text-align-last: right;
+}
+ 
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+}
+
+  #myDropdown > a {
+    font-size: 0.8em;
+  }
+
+  .dropbtn:hover {
+      color: lightskyblue;
+      cursor: pointer;
+      transition: 0.3s;
+      }
+
+    body > header > div > a {
+    padding: 0;
+}
+
+dropdown :end */
+}

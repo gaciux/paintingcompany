@@ -1,9 +1,12 @@
 @font-face { font-family: Tabitha; src: url("../fonts/Tabitha.ttf"); } 
 
-* {
+ * {
     box-sizing: border-box;
     }
-
+html {
+    padding: 0;
+    margin: 0;
+}
 
 
 body {
@@ -13,7 +16,8 @@ font-family: Tabitha;
 .header {
     display: flex;
     background-color: lightgrey;
-    position: sticky; 
+    position: sticky;
+    padding-bottom: 1em; 
 }
  
 a {
@@ -25,12 +29,14 @@ a:link {
     text-decoration: none;
 }
 
-a:hover {
+li {
+    list-style-type: none;
+}
+
+body > header > nav > ul > li > a:hover {
     color: lightskyblue;
     transition: 0.3s;
 }
-
-
 
 header {
     min-width: 480px;
@@ -38,15 +44,16 @@ header {
     padding: 0;
 }
 
-
 nav {
     margin: auto;
 }
 
 .line {
-    height: 50px;
+    height: fit-content;
     min-width: 480px;
     background-color: lightskyblue;
+    margin-bottom: 1.5em;
+    
 }
 
 .copyright {
@@ -56,14 +63,137 @@ nav {
     text-align: center;
     margin: 1em 0 1em 0;
     padding: 1em;
+    font-size: 0.8em;
 }
+
+.btnCall, .btnWrite {
+    font-size: 1rem;
+    height: fit-content;
+    font-family: Tabitha, comic sans ms;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 24px;
+    border: 0px solid #2cae01;
+    border-radius: 8px;
+    background: #48ff01;
+    background: -webkit-gradient(linear, left top, left bottom, from(#48ff01), to(#2cae01));
+    background: -moz-linear-gradient(top, #48ff01, #2cae01);
+    background: linear-gradient(to bottom, #48ff01, #2cae01);
+    -webkit-box-shadow: #42ff01 0px 0px 40px 0px;
+    -moz-box-shadow: #42ff01 0px 0px 40px 0px;
+    box-shadow: #42ff01 0px 0px 40px 0px;
+    text-shadow: #1c6d01 1px 1px 1px;
+    font: normal normal bold 20px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.btnCall:hover, .btnWrite:hover {
+    border: 0px solid #37da01;
+    background: #56ff01;
+    background: -webkit-gradient(linear, left top, left bottom, from(#56ff01), to(#35d101));
+    background: -moz-linear-gradient(top, #56ff01, #35d101);
+    background: linear-gradient(to bottom, #56ff01, #35d101);
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+.btnCall:active, .btnWrite:active {
+    background: #2cae01;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2cae01), to(#2cae01));
+    background: -moz-linear-gradient(top, #2cae01, #2cae01);
+    background: linear-gradient(to bottom, #2cae01, #2cae01);
+    text-transform: uppercase;
+}
+/* .btnCall:focus, .btnWrite:focus {
+    text-transform: lowercase;
+} */
+.btnCall:before, .btnWrite:before {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 4px -6px -4px;
+    position: relative;
+    top: 0px;
+    left: -5px;
+    background-size: 100% 100%; 
+    }
+/* space after icon in button */
+    .fas {
+        padding-right: 10px;
+    }
+
+    .welcome {
+        text-align: center;
+        margin: 0;
+        padding: 0.2em 0 0.2em 0;
+    }
+
+
+
 
 
 /* mobile */
 @media screen and (max-width: 767px) {
-    .main_menu {
-        display: none;
+    html {
+        min-width: 480px;
     }
+
+    .main_menu {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    body > header > nav > ul > li > a {
+        padding: 0;
+        font-size: 1.5rem;
+    }
+  
+    body > header > nav > ul {
+    padding: 0;
+    }
+
+    figure {
+        margin: 0;
+        padding: 0;
+        min-width: 480px;
+    }
+
+    .welcome_img {
+        max-width: 480px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        
+   }
+
+   .btnCallWrite {
+       display: flex;
+       justify-content: space-around;
+   }
+
+   .mainTxt {
+       padding: 0;
+       text-align: center;
+       font-size: x-large;       
+   }
+
+   /* .articleHome {
+       display: block;
+   } */
+  
 }
 
 /* desktop */
@@ -78,4 +208,34 @@ nav {
     .logo {
             margin: auto;
     }
+
+    .articleHome {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .mainTxt {
+        font-size: x-large;
+        padding-top: 1em;
+    }
+
+    .btnCallWrite {
+        padding: 2em 0 0 2em; 
+    }
+
+    .btnCall {
+        margin-right: 1em;
+        margin-bottom: 2em;
+    }
+
+    .btnWrite {
+        margin-bottom: 2em;
+    }
+
+    
+
+
+
+   
+    
 }

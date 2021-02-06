@@ -182,12 +182,41 @@ nav {
    .btnCallWrite {
        display: flex;
        justify-content: space-around;
+       margin-bottom: 2em;
    }
 
    .mainTxt {
        padding: 0;
        text-align: center;
        font-size: x-large;       
+   }
+
+   .six-columns {
+    display: block;
+    justify-content: center;
+    /* display: grid;
+    grid-column-gap: 1em;
+    grid-template-columns: auto auto auto;
+    padding: 1em;
+    background-color: #2196F3; */
+
+   }
+
+   .item {
+       text-align: center;
+       margin: 1em;
+       font-size: x-large;
+       align-content: center;
+   }
+
+   body > main > div.six-colums > div > p {
+       margin-top: 0;
+       margin-bottom: 2.2em;
+       
+   }
+
+   body > main > div.six-colums > div:nth-child(6) > p {
+       margin-bottom: 2em;
    }
 
    /* .articleHome {
@@ -231,6 +260,41 @@ nav {
     .btnWrite {
         margin-bottom: 2em;
     }
+
+    .six-columns {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: 1fr 1fr;
+        max-width: 1000px;
+        grid-template-areas:
+        ". . ."
+        ". . .";
+        align-items: center;
+        justify-content:center;
+        margin: auto;
+        }
+    
+       .item {
+           text-align: center;
+           font-size: x-large;          
+        }
+
+        body > main > div.six-colums > div > p {
+            margin-top: 0;
+        }
+
+        .line {
+            margin-bottom: 3em;
+        }
+
+        body > main > div.six-columns > div > a {
+            padding: 0;
+        }
+
+        .img_item {
+            padding: 0 0.5em 0 0.5em;
+        }
+
 
     
 

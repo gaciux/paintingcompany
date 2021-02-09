@@ -133,6 +133,25 @@ nav {
         padding: 0.2em 0 0.2em 0;
     }
 
+    .pContact {
+        display: block;
+        text-align: center;
+        font-size: x-large;
+        }
+
+    .mainLi {
+        list-style-type: circle;
+        line-height: 2em;
+        font-weight: bold;
+        
+        
+    }
+
+
+
+    
+    
+
 
 
 
@@ -219,6 +238,8 @@ nav {
        margin-bottom: 2em;
    }
 
+
+
    /* .articleHome {
        display: block;
    } */
@@ -240,12 +261,13 @@ nav {
 
     .articleHome {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .mainTxt {
         font-size: x-large;
-        padding-top: 1em;
+        max-width: 600px;
+        padding-left: 3em;
     }
 
     .btnCallWrite {
@@ -294,6 +316,16 @@ nav {
         .img_item {
             padding: 0 0.5em 0 0.5em;
         }
+
+        h3 {
+            text-align: center;
+        }
+
+        .mainLi {
+            min-width: 230px;
+        }
+
+
 
 
     

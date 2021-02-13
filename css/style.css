@@ -6,11 +6,14 @@
 html {
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 
 body {
 font-family: Tabitha;
+margin: 0;
+min-width: fit-content;
 }
 
 .header {
@@ -22,7 +25,7 @@ font-family: Tabitha;
  
 a {
     color: black;
-    padding: 1em;
+    
 }
 
 a:link {
@@ -31,17 +34,12 @@ a:link {
 
 li {
     list-style-type: none;
+    padding-right: 1em;
 }
 
 body > header > nav > ul > li > a:hover {
     color: lightskyblue;
     transition: 0.3s;
-}
-
-header {
-    min-width: 480px;
-    margin: 0;
-    padding: 0;
 }
 
 nav {
@@ -50,7 +48,6 @@ nav {
 
 .line {
     height: fit-content;
-    min-width: 480px;
     background-color: lightskyblue;
     margin-bottom: 1.5em;
     
@@ -58,11 +55,10 @@ nav {
 
 .copyright {
     height: 50px;
-    min-width: 480px;
+    /* min-width: 480px; */
     background-color: lightgrey;
     text-align: center;
-    margin: 1em 0 1em 0;
-    padding: 1em;
+    padding: 1em 0 1em 0;
     font-size: 0.8em;
 }
 
@@ -137,15 +133,21 @@ nav {
         display: block;
         text-align: center;
         font-size: x-large;
+        padding: 0 1em 2em 1em;
         }
 
     .mainLi {
         list-style-type: circle;
         line-height: 2em;
         font-weight: bold;
-        
-        
+               
     }
+
+    .mainTxt {
+        line-height: 1.6;
+    }
+
+
 
 
 
@@ -158,9 +160,9 @@ nav {
 
 /* mobile */
 @media screen and (max-width: 767px) {
-    html {
+    /* html {
         min-width: 480px;
-    }
+    } */
 
     .main_menu {
         margin: 0;
@@ -180,15 +182,16 @@ nav {
     figure {
         margin: 0;
         padding: 0;
-        min-width: 480px;
+        /* min-width: 480px; */
     }
 
     .welcome_img {
-        max-width: 480px;
         height: auto;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        max-width: 20em;
+        padding-bottom: 1em;
     }
 
     .header {
@@ -207,7 +210,8 @@ nav {
    .mainTxt {
        padding: 0;
        text-align: center;
-       font-size: x-large;       
+       font-size: x-large;
+       line-height: 1.6;       
    }
 
    .six-columns {
@@ -223,7 +227,7 @@ nav {
 
    .item {
        text-align: center;
-       margin: 1em;
+       /* margin: 1em; */
        font-size: x-large;
        align-content: center;
    }
@@ -236,6 +240,10 @@ nav {
 
    body > main > div.six-colums > div:nth-child(6) > p {
        margin-bottom: 2em;
+   }
+
+   .ulList {
+    padding: 0;
    }
 
 
@@ -267,7 +275,12 @@ nav {
     .mainTxt {
         font-size: x-large;
         max-width: 600px;
-        padding-left: 3em;
+        padding: 0;
+        
+    }
+
+    ul {
+        list-style-type: none;
     }
 
     .btnCallWrite {
@@ -323,6 +336,12 @@ nav {
 
         .mainLi {
             min-width: 230px;
+            list-style-type: none;
+            margin: 0.5em;
+        }
+
+        .aMenu {
+            padding-right: 1em;
         }
 
 
